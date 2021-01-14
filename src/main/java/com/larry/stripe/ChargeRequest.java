@@ -6,7 +6,7 @@ import lombok.Data;
 public class ChargeRequest {
 
     public enum Currency {
-        EUR, USD;
+        EUR, USD, VND;
     }
 
     private String description;
@@ -42,6 +42,4 @@ public class ChargeRequest {
     public void setCurrency(Currency currency) {
         this.currency = currency;
     }
-
-
 }
